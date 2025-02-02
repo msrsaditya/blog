@@ -120,6 +120,7 @@ main() {
     
     if [[ "$char" =~ ^[yY]$ ]]; then
         update_homepage "$title"
+        git add . && git commit -m 'Changes made' && git push origin main &>/dev/null
         echo "Published"
         echo
     else
