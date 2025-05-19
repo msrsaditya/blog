@@ -5,7 +5,7 @@
 }
 
 :root {
-    --background-color: #1a1b1e;
+    --background-color: #1a1a1a;
     --primary-color: #e6e7ee;
     --secondary-color: #8b8c91;
     --accent-color: #64b5f6;
@@ -22,7 +22,6 @@ body {
     background-color: var(--background-color);
     min-height: 100vh;
     padding: 3rem 1.5rem;
-    background: linear-gradient(145deg, #1a1b1e 0%, #222326 100%);
 }
 
 .header-link {

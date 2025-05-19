@@ -3,7 +3,7 @@
     --text: rgba(255, 255, 255, 0.87);
     --text-secondary: rgba(255, 255, 255, 0.6);
     --accent: rgba(255, 255, 255, 0.15);
-    --max-width: 45rem;
+    --max-width: 58rem;
 }
 
 body {
@@ -13,7 +13,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
+    font-weight: 560;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -118,8 +119,6 @@ li {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
-    margin: 1.2rem 0;
 }
 
 @media (max-width: 600px) {
