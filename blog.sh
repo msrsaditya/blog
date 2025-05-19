@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLOGS_DIR="$HOME/Documents/Blog"
+BLOGS_DIR="$HOME/Developer/Blog"
 BLOG_MARKDOWN_DIR="$BLOGS_DIR/Posts/Markdown"
 BLOG_HTML_DIR="$BLOGS_DIR/Posts/HTML"
 BLOG_TEMPLATE="$BLOGS_DIR/Templates/blog.html"
