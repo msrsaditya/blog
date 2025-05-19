@@ -167,6 +167,9 @@ img {
     transition: color 0.2s ease;
 }
 
+.social-link i { width: 2em; text-align: center; }
+.social-link { display: inline-flex; align-items: center; }
+
 .social-link:hover {
     color: var(--text);
 }

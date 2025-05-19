@@ -182,6 +182,9 @@ h1 {
     transition: color var(--transition-speed);
 }
 
+.social-link i { width: 2em; text-align: center; }
+.social-link { display: inline-flex; align-items: center; }
+
 .social-link:hover {
     color: var(--accent-color);
 }
