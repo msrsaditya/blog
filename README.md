@@ -5,3 +5,10 @@ World's simplest, fastest, most efficient way to write blogs at free of cost. Pe
 # 💯 LightHouse
 
 ![Perfect Score](LightHouse.png)
+
+# Dependencies
+- macOS (for automated actions using osascript)
+- entr (for live-reload)
+- pandoc (for Markdown to HTML conversion)
+
+The script in this is made with macOS in mind, Linux/BSD users verify compatibility.
