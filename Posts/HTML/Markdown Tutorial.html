@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Blog of Shashank (msrsaditya)">
+    <title>Markdown Tutorial</title>
+    <link rel="stylesheet" href="../../Templates/blog.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="…"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" class="site-header">
+            Shashank's Blog
+        </a>
+        <h1>Markdown Tutorial</h1>
+        <span class="post-date">19-May-2025</span>
+        <div id="content">
+            <!-- CONTENT_START -->
+        <p>Here’s a comprehensive, example-rich blog post that both teaches and demonstrates a wide array of Markdown formatting styles. You can copy and paste the following into any Markdown editor to see how each element renders.</p>
+<h2 id="summary">Summary</h2>
+<p>In this blog, you’ll learn and see live examples of nearly every common and extended Markdown feature: from basic headings and emphasis to lists, code blocks, tables, images, links, blockquotes, task lists, and even advanced hacks like collapsible sections and inline HTML. Each section includes both the raw Markdown syntax and a short rendered preview so you can immediately see how it works. Whether you’re writing a README, a blog post, or documentation, you’ll have this post as a quick reference for crafting richly formatted Markdown content.</p>
+<hr />
+<h2 id="headings">Headings</h2>
+<h3 id="atx-headings">ATX Headings</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading 1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading 2</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading 3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Heading 4</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Heading 5</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">###### Heading 6</span></span></code></pre></div>
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+<p>Headings are created by placing one to six <code>#</code> characters at the start of a line, with more <code>#</code> producing smaller headings (<a href="https://commonmark.org/help/tutorial/04-headings.html?utm_source=chatgpt.com" title="Headings - Markdown Tutorial - CommonMark">commonmark.org</a>).</p>
+<h3 id="setext-headings">Setext Headings</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Heading Level 1</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">===============</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Heading Level 2</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>---------------</span></code></pre></div>
+<h1 id="heading-level-1">Heading Level 1</h1>
+<h2 id="heading-level-2">Heading Level 2</h2>
+<p>Setext-style headings use underlines of <code>=</code> or <code>-</code> below text; they are limited to two levels but can be easier to read in plain text (<a href="https://spec.commonmark.org/0.20/?utm_source=chatgpt.com" title="Setext headers - CommonMark Spec">spec.commonmark.org</a>).</p>
+<hr />
+<h2 id="emphasis">Emphasis</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>*Italic* _Italic_</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>**Bold** __Bold__</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>***Bold &amp; Italic***</span></code></pre></div>
+<p><em>Italic</em> <em>Italic</em> <strong>Bold</strong> <strong>Bold</strong> <strong><em>Bold &amp; Italic</em></strong> Wrap text in single asterisks or underscores for <em>italic</em> and double for <strong>bold</strong> (<a href="https://commonmark.org/help/tutorial/02-emphasis.html?utm_source=chatgpt.com" title="Emphasis - Markdown Tutorial - CommonMark">commonmark.org</a>).</p>
+<hr />
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item A</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item B</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>Item C</span></code></pre></div>
+<ul>
+<li><p>Item A</p></li>
+<li><p>Item B</p></li>
+<li><p>Item C You may use <code>-</code>, <code>*</code>, or <code>+</code> interchangeably, but be consistent within a list (<a href="https://commonmark.org/help/tutorial/06-lists.html?utm_source=chatgpt.com" title="Markdown Tutorial - Lists - CommonMark">commonmark.org</a>).</p></li>
+</ul>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>First</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Second</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Third</span></code></pre></div>
+<ol type="1">
+<li>First</li>
+<li>Second</li>
+<li>Third Numbers followed by a period (or right parenthesis) create ordered lists (<a href="https://commonmark.org/help/tutorial/06-lists.html?utm_source=chatgpt.com" title="Markdown Tutorial - Lists - CommonMark">commonmark.org</a>).</li>
+</ol>
+<h3 id="nested-lists">Nested Lists</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Parent</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Child</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">     1. </span>Grandchild</span></code></pre></div>
+<ol type="1">
+<li><p>Parent</p>
+<ul>
+<li><p>Child</p>
+<ol type="1">
+<li>Grandchild</li>
+</ol></li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="code">Code</h2>
+<h3 id="inline-code">Inline Code</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Use the <span class="in">`printf()`</span> function.</span></code></pre></div>
+<p>Use the <code>printf()</code> function.</p>
+<h3 id="fenced-code-blocks">Fenced Code Blocks</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">```javascript</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">greet</span>() {</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Hello, world!&quot;</span>)<span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>```javascript
+function greet() {
+  console.log(&quot;Hello, world!&quot;);
+}</code></pre>
+<p>Triple backticks before and after create code blocks; you can optionally specify a language for syntax highlighting (<a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks?utm_source=chatgpt.com" title="Creating and highlighting code blocks - GitHub Docs">GitHub Docs</a>, <a href="https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?utm_source=chatgpt.com" title="Basic writing and formatting syntax - GitHub Docs">GitHub Docs</a>).</p>
+<h3 id="indented-code-blocks">Indented Code Blocks</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">    This is also a code block</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="in">    over multiple lines.</span></span></code></pre></div>
+<pre><code>This is also a code block
+over multiple lines.</code></pre>
+<hr />
+<h2 id="blockquotes">Blockquotes</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; “Markdown is a lightweight markup language.”</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; — John Gruber</span></span></code></pre></div>
+<blockquote>
+<p>“Markdown is a lightweight markup language.” — John Gruber</p>
+</blockquote>
+<p>Each line prefixed with <code>&gt;</code> becomes part of the quote. You can nest blockquotes by adding more <code>&gt;</code>.</p>
+<hr />
+<h2 id="links-images">Links &amp; Images</h2>
+<h3 id="links">Links</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">OpenAI</span><span class="co">](https://www.openai.com)</span></span></code></pre></div>
+<p><a href="https://www.openai.com">OpenAI</a></p>
+<h3 id="automatic-links">Automatic Links</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.openai.com&gt;</span></span></code></pre></div>
+<p><a href="https://www.openai.com">https://www.openai.com</a></p>
+<h3 id="images">Images</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Alt text](https://via.placeholder.com/150)</span></span></code></pre></div>
+<figure>
+<img src="https://via.placeholder.com/150" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<h3 id="linked-images">Linked Images</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Logo](https://via.placeholder.com/50)</span><span class="co">](https://www.openai.com)</span></span></code></pre></div>
+<p><a href="https://www.openai.com"><img src="https://via.placeholder.com/50" alt="Logo" /></a> Enclose the image Markdown in <code>[]</code> and put the link in <code>()</code> for clickable images (<a href="https://www.markdownguide.org/basic-syntax/?utm_source=chatgpt.com" title="Basic Syntax - Markdown Guide">Markdown Guide</a>).</p>
+<hr />
+<h2 id="tables">Tables</h2>
+<div class="sourceCode" id="cb17"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Syntax <span class="pp">|</span> Description <span class="pp">|</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-------------|</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Header <span class="pp">|</span> Table header <span class="pp">|</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cell   <span class="pp">|</span> Table cell   <span class="pp">|</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Table header</td>
+</tr>
+<tr>
+<td>Cell</td>
+<td>Table cell</td>
+</tr>
+</tbody>
+</table>
+<p>Use pipes <code>|</code> to separate columns and dashes <code>-</code> to underline headers; colons can align text (<code>:---</code>, <code>:---:</code>, <code>---:</code>) (<a href="https://www.markdownguide.org/extended-syntax/?utm_source=chatgpt.com" title="Extended Syntax - Markdown Guide">Markdown Guide</a>).</p>
+<hr />
+<h2 id="task-lists">Task Lists</h2>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[x]</span> Completed item</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Incomplete item</span></code></pre></div>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Completed item</label></li>
+<li><label><input type="checkbox" />Incomplete item</label></li>
+</ul>
+<p>GitHub Flavored Markdown lets you create interactive checklists by adding <code>[ ]</code> or <code>[x]</code> inside list items (<a href="https://www.markdownguide.org/extended-syntax/?utm_source=chatgpt.com" title="Extended Syntax - Markdown Guide">Markdown Guide</a>).</p>
+<hr />
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">***</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">___</span></span></code></pre></div>
+<hr />
+<hr />
+<hr />
+<p>Lines of three or more <code>-</code>, <code>*</code>, or <code>_</code> on their own create thematic breaks.</p>
+<hr />
+<h2 id="inline-html">Inline HTML</h2>
+<div class="sourceCode" id="cb20"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;color: red;&quot;</span><span class="dt">&gt;</span>This is a red paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div>
+<p style="color: red;">
+This is a red paragraph.
+</p>
+<p>You can drop raw HTML for features not supported natively in Markdown; support varies by renderer.</p>
+<hr />
+<h2 id="collapsible-sections-details">Collapsible Sections (Details)</h2>
+<div class="sourceCode" id="cb21"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Click to expand<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>Hidden content goes here.</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span></code></pre></div>
+<details>
+<summary>
+Click to expand
+</summary>
+<p>Hidden content goes here.</p>
+</details>
+<p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags for collapsible content on platforms that support it :contentReference<span data-index="9">oaicite:9</span>.</p>
+<hr />
+<h2 id="hacks-extensions">Hacks &amp; Extensions</h2>
+<ul>
+<li><p><strong>Footnotes</strong> (via extensions):</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Here is a footnote reference,<span class="ot">[^1]</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>Footnote text.</span></code></pre></div></li>
+<li><p><strong>Definition lists</strong> (via MultiMarkdown):</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>Term</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>: Definition text</span></code></pre></div></li>
+</ul>
+<p>These extended features require specific Markdown processors or extensions (<a href="https://www.markdownguide.org/hacks/?utm_source=chatgpt.com" title="Hacks - Markdown Guide">Markdown Guide</a>, <a href="https://www.markdownguide.org/extended-syntax/?utm_source=chatgpt.com" title="Extended Syntax - Markdown Guide">Markdown Guide</a>).</p>
+<hr />
+<h2 id="further-reading-tools">Further Reading &amp; Tools</h2>
+<ul>
+<li><strong>CommonMark Spec</strong> – the formal specification of Markdown syntax (<a href="https://spec.commonmark.org/0.30/?utm_source=chatgpt.com" title="0.30 - CommonMark Spec">spec.commonmark.org</a>)</li>
+<li><strong>GitHub Markdown Docs</strong> – GitHub Flavored Markdown and advanced tips (<a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting?utm_source=chatgpt.com" title="Working with advanced formatting - GitHub Docs">GitHub Docs</a>)</li>
+<li><strong>The Markdown Guide</strong> – a polished reference site covering basic through advanced syntax (<a href="https://www.markdownguide.org/?utm_source=chatgpt.com" title="Markdown Guide">Markdown Guide</a>)</li>
+</ul>
+<hr />
+<p>Feel free to bookmark or clone this post as a handy Markdown cheat sheet. Happy writing!</p>
+            <!-- CONTENT_END -->
+        </div>
+        <footer class="blog-footer">
+            <p>Debugging my poorly articulated thoughts</p>
+            <div class="social-links">
+                <a href="mailto:msrsaditya@gmail.com" class="social-link" target="_blank">
+                    <i class="fas fa-envelope"></i>Email
+                </a>
+                <a href="https://github.com/msrsaditya" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com/msrsaditya" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://msrsaditya.github.io/About/" class="social-link" target="_blank">
+                    <i class="fas fa-globe"></i>Website
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
